@@ -1,0 +1,41 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Node.js
+node_modules/
+dist/
+.vite/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backend secrets and local data
+backend/.env
+backend/hostel.db
+backend/test_hostel.db
+backend/venv/
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+
+# Generated test artifacts
+backend/__pycache__/

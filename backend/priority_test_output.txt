@@ -1,0 +1,51 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\kanij\OneDrive\Desktop\smart hostel management\backend\venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.12.10', 'Platform': 'Windows-11-10.0.26200-SP0', 'Packages': {'pytest': '9.1.1', 'pluggy': '1.6.0'}, 'Plugins': {'anyio': '4.15.1', 'html': '4.2.0', 'metadata': '3.1.1'}}
+rootdir: C:\Users\kanij\OneDrive\Desktop\smart hostel management\backend
+configfile: pytest.ini
+plugins: anyio-4.15.1, html-4.2.0, metadata-3.1.1
+collecting ... collected 33 items
+
+tests/test_priority_engine.py::TestCriticalPriority::test_critical_electrical_sparks_smoke_fire PASSED [  3%]
+tests/test_priority_engine.py::TestCriticalPriority::test_critical_water_near_electrical_hazard_fix PASSED [  6%]
+tests/test_priority_engine.py::TestCriticalPriority::test_critical_theft_and_stolen_items_fix PASSED [  9%]
+tests/test_priority_engine.py::TestCriticalPriority::test_critical_flooded_rooms_and_burst_pipes_fix PASSED [ 12%]
+tests/test_priority_engine.py::TestCriticalPriority::test_critical_structural_and_gas_hazards PASSED [ 15%]
+tests/test_priority_engine.py::TestHighPriority::test_high_total_blackout_and_power_outages PASSED [ 18%]
+tests/test_priority_engine.py::TestHighPriority::test_high_total_water_supply_loss_and_sewage PASSED [ 21%]
+tests/test_priority_engine.py::TestHighPriority::test_high_broken_locks_and_window_security PASSED [ 24%]
+tests/test_priority_engine.py::TestHighPriority::test_high_wifi_outage_during_exams_and_deadlines PASSED [ 27%]
+tests/test_priority_engine.py::TestHighPriority::test_high_security_category_default PASSED [ 30%]
+tests/test_priority_engine.py::TestHighPriority::test_high_electrical_category_baseline_default PASSED [ 33%]
+tests/test_priority_engine.py::TestMediumPriority::test_medium_ordinary_water_leaks_not_critical PASSED [ 36%]
+tests/test_priority_engine.py::TestMediumPriority::test_medium_fixtures_and_slow_drains PASSED [ 39%]
+tests/test_priority_engine.py::TestMediumPriority::test_medium_general_wifi_and_furniture PASSED [ 42%]
+tests/test_priority_engine.py::TestMediumPriority::test_medium_category_defaults PASSED [ 45%]
+tests/test_priority_engine.py::TestLowPriority::test_low_cosmetic_defects PASSED [ 48%]
+tests/test_priority_engine.py::TestLowPriority::test_low_minor_squeaks_and_cleaning PASSED [ 51%]
+tests/test_priority_engine.py::TestLowPriority::test_low_category_defaults PASSED [ 54%]
+tests/test_priority_engine.py::TestInputSanitizationAndEdgeCases::test_empty_string_handling PASSED [ 57%]
+tests/test_priority_engine.py::TestInputSanitizationAndEdgeCases::test_whitespace_only_handling PASSED [ 60%]
+tests/test_priority_engine.py::TestInputSanitizationAndEdgeCases::test_none_input_handling PASSED [ 63%]
+tests/test_priority_engine.py::TestInputSanitizationAndEdgeCases::test_case_insensitivity_mixed_and_uppercase PASSED [ 66%]
+tests/test_priority_engine.py::TestInputSanitizationAndEdgeCases::test_punctuation_and_special_characters PASSED [ 69%]
+tests/test_priority_engine.py::TestInputSanitizationAndEdgeCases::test_unknown_and_empty_category PASSED [ 72%]
+tests/test_priority_engine.py::TestFallbackMechanism::test_fallback_ambiguous_text_assigned_low PASSED [ 75%]
+tests/test_priority_engine.py::TestFallbackMechanism::test_fallback_empty_text_assigned_low PASSED [ 78%]
+tests/test_priority_engine.py::TestFallbackMechanism::test_safety_override_preserves_critical_on_fallback PASSED [ 81%]
+tests/test_priority_engine.py::TestBugFixRegressions::test_regression_bug1_water_near_electrical_is_critical PASSED [ 84%]
+tests/test_priority_engine.py::TestBugFixRegressions::test_regression_bug2_theft_and_stolen_laptop_is_critical PASSED [ 87%]
+tests/test_priority_engine.py::TestBugFixRegressions::test_regression_bug3_flooded_room_is_critical PASSED [ 90%]
+tests/test_priority_engine.py::TestBugFixRegressions::test_regression_bug4_pipe_has_burst_is_critical PASSED [ 93%]
+tests/test_priority_engine.py::TestBugFixRegressions::test_regression_bug5_ordinary_leaks_remain_medium PASSED [ 96%]
+tests/test_priority_engine.py::TestBugFixRegressions::test_regression_bug6_empty_and_none_inputs_handled_safely PASSED [100%]
+
+============================== warnings summary ===============================
+venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\kanij\OneDrive\Desktop\smart hostel management\backend\venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- Generated html report: file:///C:/Users/kanij/OneDrive/Desktop/smart%20hostel%20management/backend/priority_test_report.html -
+======================== 33 passed, 1 warning in 0.15s ========================

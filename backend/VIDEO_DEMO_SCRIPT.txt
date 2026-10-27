@@ -1,0 +1,104 @@
+================================================================================
+SMART HOSTEL MANAGEMENT SYSTEM - PRACTICAL DEMONSTRATION VIDEO SCRIPT
+Software Testing Assignment: Priority Determination Engine (pytest)
+Duration: Exactly 60 Seconds (1 Minute)
+================================================================================
+
+PROJECT DETAILS:
+- Project Name: Smart Hostel Management System with AI-Based Complaint Classification
+- Module Under Test: backend/app/services/priority_engine.py
+- Target Function: determine_priority(text, category, is_fallback=False)
+- Testing Framework: pytest (with pytest-html plugin)
+- Test Results: 33 passed in Priority Engine suite | 59 passed in Full Suite
+
+================================================================================
+ONE-MINUTE RECORDING TIMELINE & VISUAL ACTIONS
+================================================================================
+
+[00:00 - 00:10] PART 1: PROJECT & SELECTED MODULE OVERVIEW
+- On Screen: Open `backend/app/services/priority_engine.py` in your code editor.
+- Action: Briefly scroll down showing `CRITICAL_PATTERNS`, `HIGH_PATTERNS`, and `determine_priority()`.
+- Narration (Spoken):
+  "Hello. In this software testing demonstration, I am presenting the Priority
+   Determination Engine of our Smart Hostel Management System, implemented in
+   app/services/priority_engine.py. While machine learning categorizes complaints,
+   this module acts as our deterministic safety protocol to evaluate hazards,
+   electrocution risks, and living disruptions."
+
+--------------------------------------------------------------------------------
+[00:10 - 00:20] PART 2: TEST SUITE ARCHITECTURE
+- On Screen: Switch tab to `backend/tests/test_priority_engine.py`.
+- Action: Show the test classes: TestCriticalPriority, TestMediumPriority (ordinary leaks vs floods), and TestBugFixRegressions.
+- Narration (Spoken):
+  "We selected pytest as our testing framework for its rich assertion
+   diagnostics and robust test organization. The test suite covers 33 unit
+   tests across all priority levels, edge cases, input sanitization, and
+   regression locks for critical defects like water near electrical hazards."
+
+--------------------------------------------------------------------------------
+[00:20 - 00:40] PART 3: PYTEST EXECUTION & LIVE RESULTS
+- On Screen: Open terminal in the `backend` directory.
+- Action: Paste and run:
+  .\venv\Scripts\python.exe -m pytest tests/test_priority_engine.py -v
+- Watch all 33 tests execute and turn green in 0.2 seconds.
+- Narration (Spoken):
+  "Now, executing pytest directly against our priority engine suite.
+   All 33 test cases execute in just 0.15 seconds and pass successfully.
+   This verifies that life-safety emergencies, ordinary tap leaks, and empty
+   inputs are accurately evaluated without any failure."
+
+--------------------------------------------------------------------------------
+[00:40 - 00:50] PART 4: VISUAL HTML REPORT DEMONSTRATION
+- On Screen: Switch to web browser showing `priority_test_report.html` (or run: Start-Process .\priority_test_report.html).
+- Action: Scroll through the interactive HTML report showing the green 33 passed status and metadata.
+- Narration (Spoken):
+  "Here is our generated pytest-html report, providing an auditable visual
+   record of all passed test cases, execution timings, and platform metadata."
+
+--------------------------------------------------------------------------------
+[00:50 - 01:00] PART 5: SYSTEM REGRESSION SUMMARY & CONCLUSION
+- On Screen: Switch to `PRIORITY_ENGINE_TESTING_REPORT.md` (or terminal showing 59 passed).
+- Action: Highlight the 59/59 full test suite pass count.
+- Narration (Spoken):
+  "Furthermore, our complete backend regression suite achieved 59 out of 59
+   passed tests. This confirms that all bug fixes integrate seamlessly with
+   zero regressions. Thank you."
+
+================================================================================
+FAST TERMINAL COMMANDS TO COPY & PASTE (In backend directory)
+================================================================================
+
+1. Run Priority Engine Tests with Verbose Output:
+   .\venv\Scripts\python.exe -m pytest tests/test_priority_engine.py -v
+
+2. Open the Interactive HTML Report:
+   Start-Process .\priority_test_report.html
+
+3. (Optional) Run Full Backend Suite:
+   .\venv\Scripts\python.exe -m pytest tests/ -v
+
+================================================================================
+WINDOWS SCREEN RECORDING INSTRUCTIONS
+================================================================================
+
+HOW TO RECORD:
+- Method 1 (Quickest): Press `Windows Key + Alt + R`
+  This triggers Windows Game Bar to start recording your active window immediately.
+  A small timer will appear. Press `Windows Key + Alt + R` again to stop.
+- Method 2 (Full Screen / Area): Press `Windows Key + Shift + R`
+  This opens the Windows Snipping Tool screen recorder. Drag to select your
+  screen area and click 'Start'. Click the red Stop icon when finished.
+
+WHERE TO FIND SAVED VIDEO:
+- Open File Explorer -> Navigate to `Videos \ Captures`
+  (Full Path: C:\Users\kanij\Videos\Captures)
+- Rename the video file to: `Smart_Hostel_Priority_Engine_Testing_Demo.mp4`
+
+HOW TO UPLOAD TO GOOGLE DRIVE:
+1. Go to https://drive.google.com
+2. Click '+ New' -> 'File upload'
+3. Select the video from `Videos \ Captures`
+4. Right-click the uploaded file in Drive -> 'Share' -> Set General Access to
+   'Anyone with the link' (Viewer)
+5. Copy the link and paste it into your assignment submission.
+================================================================================
